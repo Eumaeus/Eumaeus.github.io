@@ -11,5 +11,5 @@ My projects' sourcecode is at
 [Eumaeus](https://github.com/eumaeus)
 
 You can find the source code for all CITE and CTS projects at
-{% include icon-github.html orgname="cite-architecture" %} /
+{% include icon-github.html  %} /
 [Cite-Architecture](https://github.com/orgs/cite-architecture)
