@@ -54,7 +54,7 @@ What is the *content* in these examples? The answer must be, “It depends…”
 
 ## The Simplest Possible Homer Multitext
 
-I want to leave issues of markup, editorial status, and [TEI XML](http://www.tei-c.org/index.xml) for later. I want to start from the very basics. **Typing Greek is hard.** And doomed is any effort to produce a corpus of Greek texts, and an infrascture for working with them, that ingores this fact.
+I want to leave issues of markup, editorial status, and [TEI XML](http://www.tei-c.org/index.xml) for later. I want to start from the very basics. **Typing Greek is hard.** And doomed is any effort to produce a corpus of Greek texts, and an infrastructure for working with them, that ignores this fact.
 
 We pursue digital projects mainly because computers are good at counting things. To understand large and complex corpora of texts, literary traditions, and historical languages, we hope to use automated process to gain insights that human readers might not see. So… counting.
 
@@ -71,7 +71,7 @@ For this example, I have used online sources to create the simplest possible "Ho
 
 I have published this valuable dataset [here](/assets/simple-hmt.html). Before going any further, I want to say, very clearly, that **these are all good editions of the *Iliad*.** Each exists for a different purpose, edited according to different scholarly values, but they are all fine, technically correct, editions. They are all freely available online, so we should be able to work with them.
 
-Let's explore the Homeric tradition, based on this dataset. We aren't interested in fancy stuff like lemmatized, morphologically aware searching. We just want to count occurrances of a string.
+Let's explore the Homeric tradition, based on this dataset. We aren't interested in fancy stuff like lemmatized, morphologically aware searching. We just want to count occurrences of a string.
 
 We can start by finding instances of "οὐλομένην" in our six Iliadic editions. Using Safari, we can type in our search query and hit “Find”:
 
@@ -104,7 +104,7 @@ Since that `.gif` is small, and moves fast, here's what happened:
 It is not surprising that a simple string-search should fail to catch "Οὐλομένην", with an upper-case omicron, from Edition 6; it is actually remarkable that Safari did. But both Firefox and `grep` return counter-intuitive results, failing to "find" a string in the place whence it was copied, but "finding" it in (some) other places.
 
 
-## Enough Belaboring the the Point
+## Enough Belaboring the Point
 
 Obviously, this is a Unicode problem. 
 
@@ -112,7 +112,7 @@ Obviously, this is a Unicode problem.
 - `0x3AD` GREEK SMALL LETTER EPSILON WITH TONOS
 - `0x3B5` GREEK SMALL LETTER EPSILON (with an acute, or tonos??, invisibly combined)
 
-And equally obviously, different text-engines handle these cases differently, with Safari happily recognizing them a the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting nondeterministic results when searching Greek texts that are (a) perfectly correct according to standards for typing Greek, and (b) indistinguishable to the human eye.
+And equally obviously, different text-engines handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that are (a) perfectly correct according to standards for typing Greek, and (b) indistinguishable to the human eye.
 
 ## Canonical Citation
 
@@ -133,11 +133,11 @@ Using the CITE library, we can cite, e.g.:
 
 And see that they are "identical", *as Greek strings*.
 
-Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a citation to them,  `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην` is not the *same as* the string "οὐλομένην" as it exists, as Unicode charactres, in the [TEI-XML file of the Homer Multitext's diplomatic edition of the Venetus A](https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml), but a *very precise and specific citation to that content*. 
+Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a citation to them,  `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην` is not the *same as* the string "οὐλομένην" as it exists, as Unicode characters, in the [TEI-XML file of the Homer Multitext's diplomatic edition of the Venetus A](https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml), but a *very precise and specific citation to that content*. 
 
 ## Try it at Home!
 
-For those technically inclined, I have made a small script that demonstrates this aspect of the CTS-URN library. You must have [downloaded and installed Groovy](http://www.groovy-lang.org). If you've done that, then you can [grab the script](assets/test-cts.groovy), put it somewhere, naviage in a Terminal to that place, and type `groovy test-cts.groovy`.
+For those technically inclined, I have made a small script that demonstrates this aspect of the CTS-URN library. You must have [downloaded and installed Groovy](http://www.groovy-lang.org). If you've done that, then you can [grab the script](assets/test-cts.groovy), put it somewhere, navigate in a Terminal to that place, and type `groovy test-cts.groovy`.
 
 ## Reproducible, Valid, Verified
 
