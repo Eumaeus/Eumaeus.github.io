@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Research on Textual Analysis"
-date:   2015-12-01 19:55:57 -0500
+date:   2016-01-28 19:55:57 -0500
 categories: general
 ---
 
