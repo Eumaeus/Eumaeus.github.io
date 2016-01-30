@@ -50,7 +50,7 @@ For this example, I have used online sources to create the simplest possible "Ho
 	<li><i>Iliad</i> 1.2, first word. Edition 1: οὐλομένην <a href="https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml">Homer Multitext Archival edition.</a></li>
 		<li><i>Iliad</i> 1.2, first word. Edition 2: οὐλομένην <a href="https://www.loebclassics.com/view/homer-iliad/1924/pb_LCL170.13.xml">Loeb Online</a></li>
 			<li><i>Iliad</i> 1.2, first word. Edition 3: οὐλομένην <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133">Perseus Digital Library</a></li>
-				<li><i>Iliad</i> 1.2, first word. Edition 4: οὐλομένην <a href="http://repos1.alpheios.net/exist/rest/db/xq/alpheios-get-ref.xq?urn=urn:cts:greekLit:tlg0012.tlg001.alpheios-text-grc1:1.1-1.30">Alpheios Iliad</a></li>
+				<li><i>Iliad</i> 1.2, first word. Edition 4: οὐλομένην <a href="http://repos1.alpheios.net/exist/rest/db/xq/alpheios-get-ref.xq?urn=urn:cts:greekLit:tlg0012.tlg001.alpheios-text-grc1:1.1-1.30">Alpheios</a></li>
 <li><i>Iliad</i> 1.2, first word. Edition 5: οὐλομένην <a href="https://student.cc.uoc.gr/uploadFiles/177-ΑΕΦΦ186/Herodotus%20Proem%20parallel%20texts.pdf">Υπολογιστικό Κέντρο</a></li>
 <li><i>Iliad</i> 1.2, first word. Edition 6: Οὐλομένην <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=41&ved=0ahUKEwjNzNy8y8zKAhUDOiYKHek9DCg4KBAWCBswAA&url=ftp%3A%2F%2Fftp.dante.de%2Ftex-archive%2Ffonts%2Fjunicode%2Fdoc%2Fhomer_sample.tex&usg=AFQjCNFM88DzzAeBBn-xQOdOXyuAWbn9Wg&sig2=HHo0c3Ea94w_43xXKjLtow&bvm=bv.113034660,d.eWE&cad=rja">Dante.de (TeX file)</a></li>
 </ul>
