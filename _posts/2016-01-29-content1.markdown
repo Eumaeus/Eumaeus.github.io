@@ -108,7 +108,7 @@ Unicode, bless its heart, is a given, and we can't expect to effect any fundamen
 
 The HMT’s infrastructure has always been based on “canonical citation”, that is, methods for citing texts as precisely or imprecisely as we desire, without regard to any particular technology. In the world of physical books, "John 3:16" is *canonical* because it works with any edition or translation of the New Testament.
 
-Because in the 21st Century we want to talk about and work with texts very precisely, we need to *cite* them very precisely, which means being able to *cite* something like: "The string 'ουλομένην' in the HMT's diplomatic edition of Marcianus Graecus Z.454, Book 1, Line 2." And we would like to compare that citation to another, such as "The string 'ουλομένην' in the Perseus Digital Library's edition, which follows that of T.W. Allen, Book 1, Line 2."
+Because in the 21st Century we want to talk about and work with texts very precisely, we need to *cite* them very precisely, which means being able to *cite* something like: "The Greek word 'ουλομένην' in the HMT's diplomatic edition of Marcianus Graecus Z.454, Book 1, Line 2." And we would like to compare that citation to another, such as "The Greek word 'ουλομένην' in the Perseus Digital Library's edition, which follows that of T.W. Allen, Book 1, Line 2."
 
 As part of the [CITE architecture](https://github.com/cite-architecture), the HMT has published the [CITE Library](https://github.com/cite-architecture/cite), libraries for working with citations of texts, images, and other data. Among other things, these libraries are aware of the challenges of Unicode. They allow us to manage the unpredictable world of *content objects* by turning them into editorially managed *citation objects*.
 
