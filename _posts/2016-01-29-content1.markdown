@@ -102,7 +102,7 @@ And equally obviously, different engines for searching text handle these cases d
 
 ## Canonical Citation
 
-Digital Humanists know that content is difficult. Standardizing markup was the goal of the [TEI Standard](http://www.tei-c.org/index.xml), and when that standard expanded to serve so many special cases that it ceased to be useful as a standard, many of us were grateful to [EpiDoc](http://sourceforge.net/p/epidoc/wiki/Home/) for stepping in. But the example above shows that all the markup standards in the world will not allow us to *count words* without a much more rigorous infrastructure for textual analysis than is afforded by existing standards.
+Digital Humanists know that content is difficult. Standardizing markup was the goal of the [TEI Standard](http://www.tei-c.org/index.xml), and when that standard expanded to serve so many special cases that it ceased to be useful as a standard, many of us were grateful to [EpiDoc](http://sourceforge.net/p/epidoc/wiki/Home/) for stepping in. But the example above shows that all the markup conventions in the world will not allow us to *count words* without a much more rigorous infrastructure for textual analysis than is afforded by existing standards.
 
 Unicode, bless its heart, is a given, and we can't expect to effect any fundamental change to how it handles Greek. Nor can we expect digital editions of Greek texts to have *more* consistency in the future. Our HMT editors are working in the United States and in Europe, on Apple computers, Windows computers, and Linux computers, using various keyboard input systems.
 
