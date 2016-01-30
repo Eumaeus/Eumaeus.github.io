@@ -112,14 +112,14 @@ Because in the 21st Century we want to talk about and work with texts very preci
 
 As part of the [CITE architecture](https://github.com/cite-architecture), the HMT has published the [CITE Library](https://github.com/cite-architecture/cite), libraries for working with citations of texts, images, and other data. Among other things, these libraries are aware of the challenges of Unicode. They allow us to manage the unpredictable world of *content objects* by turning them into editorially managed *citation objects*.
 
-Using the CITE library, we can cite, e.g.:
+Using the CITE library, we can cite, *e.g.*:
 
 - `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην`
 - `urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.2@οὐλομένην`
 
-And see that they are "identical", *as Greek strings*.
+And see that they are identical, *as Greek strings*.
 
-Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a citation to them,  `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην` is not the *same as* the string "οὐλομένην" as it exists, as Unicode characters, in the [TEI-XML file of the Homer Multitext's diplomatic edition of the Venetus A](https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml), but a *very precise and specific citation to that content*.
+Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a citation to them,  `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην` is not the *same as* the string "οὐλομένην" as it exists, as Unicode characters, in the [TEI-XML file of the Homer Multitext's diplomatic edition of the Venetus A](https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml), but is a *very precise and specific citation to that content*.
 
 ## Try it at Home!
 
