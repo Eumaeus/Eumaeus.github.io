@@ -98,7 +98,7 @@ Obviously, this is a Unicode problem.
 - `0x3AD` GREEK SMALL LETTER EPSILON WITH TONOS
 - `0x3B5` GREEK SMALL LETTER EPSILON (with an acute, or tonos??, invisibly combined)
 
-And equally obviously, different engines for searching text handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that (a) are found in serious scholarly editions, (b) are perfectly correct according to standards for typing Greek, (c) and are indistinguishable to the human eye.
+And equally obviously, different engines for searching text handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that (1) are found in serious scholarly editions, (2) are perfectly correct according to standards for typing Greek, (3) and are indistinguishable to the human eye.
 
 ## Canonical Citation
 
