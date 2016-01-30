@@ -76,7 +76,7 @@ Wait, what happened there? I did this:
 1. Firefox "found" the string "οὐλομένην" in Edition 3 and Editon 4, **but not in Edition 1**.
 
 Okay, enough of the kiddie stuff. Let's use UNIX tools, like real Digital Humanists should. Let's `grep 'οὐλομένην' simplest-hmt.html` and see what we get:
-ß
+
 ![ GREP GIF](/assets/grep.gif)
 
 Since that `.gif` is small, and moves fast, here's what happened:
