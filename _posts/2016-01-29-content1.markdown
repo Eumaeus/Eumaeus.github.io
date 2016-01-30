@@ -110,6 +110,8 @@ The HMT’s infrastructure has always been based on “canonical citation”, th
 
 Because in the 21st Century we want to talk about and work with texts very precisely, we need to *cite* them very precisely, which means being able to *cite* something like: "The Greek word 'ουλομένην' in the HMT's diplomatic edition of Marcianus Graecus Z.454, Book 1, Line 2." And we would like to compare that citation to another, such as "The Greek word 'ουλομένην' in the Perseus Digital Library's edition, which follows that of T.W. Allen, Book 1, Line 2."
 
+We want this comparison to be *canonical*. We aren't, actually, interested in a string of Unicode characters, but a series of *Greek characters*, a word in ancient Greek. It should not matter what technology is used to represent that ancient Greek word.
+
 As part of the [CITE architecture](https://github.com/cite-architecture), the HMT has published the [CITE Library](https://github.com/cite-architecture/cite), libraries for working with citations of texts, images, and other data. Among other things, these libraries are aware of the challenges of Unicode. They allow us to manage the unpredictable world of *content objects* by turning them into editorially managed *citation objects*.
 
 Using the CITE library, we can cite, *e.g.*:
