@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content Objects
+title: Content Objects 
 ---
 
 The [GitHub](https://github.com/homermultitext/) repository for the [Homer Multitext](http://www.homermultitext.org) (HMT) now contains a staggering amount of data,  contributed by more than 100 editors directed by Casey Dué and Mary Ebbott, the project's Editors,  Stephanie Lindeborg, our Project Manager, and the project Architects,  Neel Smith and myself. The [HMT Blog](http://homermultitext.blogspot.com) now contains a wealth of scholarly insights into the nature and history of Greek epic poetry. But the **infrastructure** for the project has been the particular focus for me and [Neel Smith](http://neelsmith.github.io) for a decade, which invites the question: Where is this infrastructure? Where is the cool page where readers can explore in detail the transmission of the *Iliad*? What have we been up to?
@@ -98,7 +98,7 @@ Obviously, this is a Unicode problem.
 - `0x3AD` GREEK SMALL LETTER EPSILON WITH TONOS
 - `0x3B5` GREEK SMALL LETTER EPSILON (with an acute, or tonos??, invisibly combined)
 
-And equally obviously, different engines for searching text handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that (a) are found in serious scholarly editions,(b) are perfectly correct according to standards for typing Greek, (c) and are indistinguishable to the human eye.
+And equally obviously, different engines for searching text handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that (a) are found in serious scholarly editions, (b) are perfectly correct according to standards for typing Greek, (c) and are indistinguishable to the human eye.
 
 ## Canonical Citation
 
