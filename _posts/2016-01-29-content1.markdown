@@ -42,7 +42,7 @@ What is the *content* in these examples? The answer must be, “It depends…”
 
 I want to leave issues of markup, editorial status, and [TEI XML](http://www.tei-c.org/index.xml) for later. I want to start from the very basics. **Typing Greek is hard.** And doomed is any effort to produce a corpus of Greek texts, and an infrastructure for working with them, that ignores this fact.
 
-We pursue digital projects mainly because computers are good at counting things. To understand large and complex corpora of texts, literary traditions, and historical languages, we hope to use automated process to gain insights that human readers might not see. So… counting.
+We pursue digital projects mainly because computers are good at counting things. To understand large and complex corpora of texts, literary traditions, and historical languages, we hope to use automated processes to gain insights that human readers might not see. So… counting.
 
 For this example, I have used online sources to create the simplest possible "Homer Multitext". I looked online for Greek editions of the *Iliad* and compiled this very short digital library:
 
