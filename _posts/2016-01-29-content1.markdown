@@ -119,7 +119,7 @@ Using the CITE library, we can cite, *e.g.*:
 
 And see that they are identical, *as Greek strings*.
 
-Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a citation to them,  `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην` is not the *same as* the string "οὐλομένην" as it exists, as Unicode characters, in the [TEI-XML file of the Homer Multitext's diplomatic edition of the Venetus A](https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml), but is a *very precise and specific citation to that content*.
+Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a citation to those contents, `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην` is not the *same as* the string "οὐλομένην" as it exists, as Unicode characters, in the [TEI-XML file of the Homer Multitext's diplomatic edition of the Venetus A](https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml), but is a *very precise and specific citation to that content*.
 
 ## Try it at Home!
 
