@@ -1,0 +1,130 @@
+---
+layout: post
+title: Content Objects
+---
+
+The [GitHub](https://github.com/homermultitext/) repository for the [Homer Multitext](http://www.homermultitext.org) (HMT) now contain{++s++} a staggering amount of data,  contributed by more than 100 editors directed by Casey Dué and Mary Ebbott, the project's Editors,  Stephanie Lindeborg, our Project Manager, and the project Architects,  Neel Smith and myself. The [HMT Blog](http://homermultitext.blogspot.com) now contains a wealth of scholarly insight{++s++} into the nature and history of Greek epic poetry. But the **infrastructure** for the project has been the particular focus for me and [Neel Smith](http://neelsmith.github.io) for a decade, which invites the question: Where is this infrastructure? Where is the cool page where readers can explore in detail the transmission of the *Iliad*? What have we been up to?
+
+The HMT does have pages where readers can [examine manuscript pages](http://www.homermultitext.org/hmt-digital/facs?urn=urn%3Acite%3Ahmt%3AmsA.12r), sometimes seeing [transcriptions mapped to regions-of-interest](http://www.homermultitext.org/hmt-digital/indices?urn=urn%3Acite%3Ahmt%3Avaimg.VA024RN-0025). There are ways to see [what scholia comment on a particular line](http://www.homermultitext.org/hmt-digital/scholia?urn=urn%3Acts%3AgreekLit%3Atlg0012.tlg001.msA%3A1.1). There are tools for identifying [regions of interest on an image](http://www.homermultitext.org/hmt-digital/ict.html?urn=urn:cite:hmt:vaimg.VA012RN-0013). But  the HMT’s online interfaces do not aim to create the kind of presentation seen in [various](http://prototypes.openscriptures.org/manuscript-comparator/?passage=1+John+5&view=parallel&strongs=1) [projects](http://digital.vatlib.it) [with](http://art.thewalters.org/browse/category/manuscript-and-rare-books/) [similar](https://www.bl.uk/manuscripts/) [aims](http://codexsinaiticus.org/en/). The HMT’s infrastructure resides in the [CITE Architecture Github page](https://github.com/cite-architecture), and almost none of it seems aimed at the end-user experience. Instead, it is all about citation.
+
+I am about to begin a sabbatical, during which I will continue working on this infrastructure, for the HMT and for a project focusing on the text of Plutarch's *Life of Pericles*. As I look forward to that, it seemed worthwhile to explain briefly the nature of the “infrastructure”, why it is important, and why it takes so long.
+
+## Content-Objects vs. Citation-Objects
+
+In 1990, Stephen DeRose, David Durand, Elli Mylonas, and Allen Renear, thinking about “text” in a digital environment, asked “What is Text, Really?”.[^whatistext] They suggested that a “text” should be defined as “an ordered hierarchy of content-objects.” A decade later, Neel Smith and Gabriel Weaver proposed an alternate defintion of “text”: “an ordered hierarchy of *citation* objects.” [^ohco2]
+
+Both agree on “ordered”—you read a text from the beginning to the end. Both agree on “hierarchy”—The New Testament consists of books, which consist of chapters, which consist of verses; the *Iliad* consists of 24 books, each consisting of hundreds of poetic lines; &c. The question is “What kind of *objects* are the fundamental units of a text?”
+
+[^whatistext]: DeRose, Stephen, David Durand, Elli Mylonas, and Allen Renear. “What Is Text, Really?” *Journal of Computing in Higher Education* 1, no. 2 (Winter 1990): 3–26.
+
+[^ohco2]: Smith, D. Neel, and Gabriel Weaver. “Applying Domain Knowledge from Structured Citation Formats to Text and Data Mining: Examples Using the CITE Architecture.” *Text Mining Services*, 2009, 129.
+
+## Content is Hard
+
+Seeing the “atoms” of a text as *content* seems obvious. Until you try to do anything with that content.
+
+For example (*Iliad* 16.643, diplomatic edition of papyrus H87):
+
+```xml
+<supplied>ὥρῃ ἐν εἰαρινῇ, ὅτε τε γλάγος ἄγγε</supplied>α δεύε<unclear>ι·</unclear>
+```
+
+Or (*Iliad* 2.4, diplomatic edition of the Venetus A, Marcianus Graecus Z. 454):
+
+```xml
+<choice><reg>τιμήσει</reg><orig>τιμήσῃ</orig></choice>· ὀλέσῃ δὲ πολέας ἐπὶ νηυσὶν Ἀχαιῶν·
+```
+
+What is the *content* in these examples? The answer must be, “It depends…”.
+
+
+## The Simplest Possible Homer Multitext
+
+I want to leave issues of markup, editorial status, and [TEI XML](http://www.tei-c.org/index.xml) for later. I want to start from the very basics. **Typing Greek is hard.** And doomed is any effort to produce a corpus of Greek texts, and an infrastructure for working with them, that ignores this fact.
+
+We pursue digital projects mainly because computers are good at counting things. To understand large and complex corpora of texts, literary traditions, and historical languages, we hope to use automated process to gain insights that human readers might not see. So… counting.
+
+For this example, I have used online sources to create the simplest possible "Homer Multitext". I looked online for Greek editions of the *Iliad* and compiled this very short digital library:
+
+<ul>
+	<li><i>Iliad</i> 1.2, first word. Edition 1: οὐλομένην <a href="https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml">Homer Multitext Archival edition.</a></li>
+		<li><i>Iliad</i> 1.2, first word. Edition 2: οὐλομένην <a href="https://www.loebclassics.com/view/homer-iliad/1924/pb_LCL170.13.xml">Loeb Online</a></li>
+			<li><i>Iliad</i> 1.2, first word. Edition 3: οὐλομένην <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133">Perseus Digital Library</a></li>
+				<li><i>Iliad</i> 1.2, first word. Edition 4: οὐλομένην <a href="http://repos1.alpheios.net/exist/rest/db/xq/alpheios-get-ref.xq?urn=urn:cts:greekLit:tlg0012.tlg001.alpheios-text-grc1:1.1-1.30">Alpheios Iliad</a></li>
+<li><i>Iliad</i> 1.2, first word. Edition 5: οὐλομένην <a href="https://student.cc.uoc.gr/uploadFiles/177-ΑΕΦΦ186/Herodotus%20Proem%20parallel%20texts.pdf">Υπολογιστικό Κέντρο</a></li>
+<li><i>Iliad</i> 1.2, first word. Edition 6: Οὐλομένην <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=41&ved=0ahUKEwjNzNy8y8zKAhUDOiYKHek9DCg4KBAWCBswAA&url=ftp%3A%2F%2Fftp.dante.de%2Ftex-archive%2Ffonts%2Fjunicode%2Fdoc%2Fhomer_sample.tex&usg=AFQjCNFM88DzzAeBBn-xQOdOXyuAWbn9Wg&sig2=HHo0c3Ea94w_43xXKjLtow&bvm=bv.113034660,d.eWE&cad=rja">Dante.de (TeX file)</a></li>
+</ul>
+
+I have published this valuable dataset [here](/assets/simple-hmt.html). Before going any further, I want to say, very clearly, that **these are all good editions of the *Iliad*.** Each exists for a different purpose, edited according to different scholarly values, but they are all fine, technically correct, editions. They are all freely available online, so we should be able to work with them.
+
+Let's explore the Homeric tradition, based on this dataset. We aren't interested in fancy stuff like lemmatized, morphologically aware searching. We just want to count occurrences of a string.
+
+We can start by finding instances of "οὐλομένην" in our six Iliadic editions. Using Safari, we can type in our search query and hit “Find”:
+
+![ Safari GIF ](/assets/safari.gif)
+
+Great! Six instances of οὐλομένην; the word appears in all of our editions.
+
+And because this is just data, we can perform this analysis using various tools, such as a different browser, like Firefox:
+
+![ Firefox GIF ](/assets/firefox.gif)
+
+Wait, what happened there? I did this:
+
+1. I selected "οὐλομένην" from Edition 1.
+1. I pasted that string into the "Find" field.
+1. Firefox "found" the string "οὐλομένην" in Edition 3 and Editon 4, **but not in Edition 1**.
+
+Okay, enough of the kiddie stuff. Let's use UNIX tools, like real Digital Humanists should. Let's `grep 'οὐλομένην' simplest-hmt.html` and see what we get:
+ß
+![ GREP GIF](/assets/grep.gif)
+
+Since that `.gif` is small, and moves fast, here's what happened:
+
+1. I copied "οὐλομένην" from Edition 1.
+1. I asked `grep` to find that string in the `simplest-hmt.html` file.
+1. `grep` "found" it in Edition 3 and Edition 4.
+1. When I asked `grep` to find the string "οὐλομένην", copied from Edition 3, the results were the same.
+1. When I asked `grep` to find the string "οὐλομένην", copied from Edition 5, the results were the same.
+
+It is not surprising that a simple string-search should fail to catch "Οὐλομένην", with an upper-case omicron, from Edition 6; it is actually remarkable that Safari did. But both Firefox and `grep` return counter-intuitive results, failing to "find" a string in the place whence it was copied, but "finding" it in (some) other places.
+
+
+## Enough Belaboring the Point
+
+Obviously, this is a Unicode problem.
+
+- `0x1F73` GREEK SMALL LETTER EPSILON WITH OXIA
+- `0x3AD` GREEK SMALL LETTER EPSILON WITH TONOS
+- `0x3B5` GREEK SMALL LETTER EPSILON (with an acute, or tonos??, invisibly combined)
+
+And equally obviously, different engines for searching text handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that are found in serious scholarly editions, are  perfectly correct according to standards for typing Greek, and are indistinguishable to the human eye.
+
+## Canonical Citation
+
+Digital Humanists know that content is difficult. Standardizing markup was the goal of the [TEI Standard](http://www.tei-c.org/index.xml), and when that standard expanded to serve so many special cases that it ceased to be a standard, many of us were grateful to [EpiDoc](http://sourceforge.net/p/epidoc/wiki/Home/) for stepping in. But the example above shows that all the markup standards in the world will not allow us to *count words* without a much more rigorous infrastructure for textual analysis than is afforded by existing standards.
+
+Unicode, bless its heart, is a given, and we can't expect to effect any fundamental change to how it handles Greek. Nor can we expect digital editions of Greek texts to have *more* consistency in the future. Our HMT editors are working in the United States and in Europe, on Apple computers, Windows computers, and Linux computers, using various keyboard input systems.
+
+The HMT’s infrastructure has always been based on “canonical citation”, that is, methods for citing texts as precisely or imprecisely as we desire, without regard to any particular technology. In the world of physical books, "John 3:16" is *canonical* because it works with any edition or translation of the New Testament.
+
+Because in the 21st Century we want to talk about and work with texts very precisely, we need to *cite* them very precisely, which means being able to *cite* something like: "The string 'ουλομένην' in the HMT's diplomatic edition of Marcianus Graecus Z.454, Book 1, Line 2." And we would like to compare that citation to another, such as "The string 'ουλομένην' in the Perseus Digital Library's edition, which follows that of T.W. Allen, Book 1, Line 2."
+
+As part of the [CITE Architecture](https://github.com/cite-architecture) infrastructure, the HMT has published the [CITE Library](https://github.com/cite-architecture/cite), libraries for working with citations of texts, images, and other data. Among other things, these libraries are aware of the challenges of Unicode. They allow us to manage the unpredictable world of *content objects* by turning them into editorially managed *citation objects*.
+
+Using the CITE library, we can cite, e.g.:
+
+- `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην`
+- `urn:cts:greekLit:tlg0012.tlg001.perseus-grc1:1.2@οὐλομένην`
+
+And see that they are "identical", *as Greek strings*.
+
+Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a citation to them,  `urn:cts:greekLit:tlg0012.tlg001.maA:1.2@οὐλομένην` is not the *same as* the string "οὐλομένην" as it exists, as Unicode characters, in the [TEI-XML file of the Homer Multitext's diplomatic edition of the Venetus A](https://github.com/homermultitext/hmt-archive/blob/master/editions/VenetusA/Iliad/VenetusA-Iliad-01.xml), but a *very precise and specific citation to that content*.
+
+## Try it at Home!
+
+For those technically inclined, I have made a small script that demonstrates this aspect of the CTS-URN library. You must have [downloaded and installed Groovy](http://www.groovy-lang.org). If you've done that, then you can [grab the script](assets/test-cts.groovy), put it somewhere, navigate in a Terminal to that place, and type `groovy test-cts.groovy`.
+
+## Reproducible, Valid, Verified
+
+We are trying to make our data reproducible and subject to automated validation and verification by human editors. We are trying to do this from the bottom up, starting at the character level. Thanks to Neel Smith's tireless (but with this blog post, I hope, not entirely thankless) work on the challenges of Unicode and Greek, we are in a position to work with *content* by means of *citation* and get reproducible, valid, and verifiable results.
