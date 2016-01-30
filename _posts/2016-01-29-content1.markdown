@@ -123,7 +123,7 @@ Just as "John 3:16" is not the same thing as the *contents* of John 3:16, but a 
 
 ## Try it at Home!
 
-For those technically inclined, I have made a small script that demonstrates this aspect of the CTS-URN library. You must have [downloaded and installed Groovy](http://www.groovy-lang.org). If you've done that, then you can [grab the script](assets/test-cts.groovy), put it somewhere, navigate in a Terminal to that place, and type `groovy test-cts.groovy`.
+For those technically inclined, I have made a small script that demonstrates this aspect of the CTS-URN library. You must have [downloaded and installed the Groovy programming language](http://www.groovy-lang.org). If you've done that, then you can [grab the script](assets/test-cts.groovy), put it somewhere, navigate in a Terminal to that place, and type `groovy test-cts.groovy`.
 
 ## Reproducible, Valid, Verified
 
