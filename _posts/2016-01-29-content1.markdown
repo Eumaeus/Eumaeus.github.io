@@ -87,7 +87,7 @@ Since that `.gif` is small, and moves fast, here's what happened:
 1. When I asked `grep` to find the string "οὐλομένην", copied from Edition 3, the results were the same.
 1. When I asked `grep` to find the string "οὐλομένην", copied from Edition 5, the results were the same.
 
-It is not surprising that a simple string-search should fail to catch "Οὐλομένην", with an upper-case omicron, from Edition 6; it is actually remarkable that Safari did. But both Firefox and `grep` return counter-intuitive results, failing to "find" a string in the place whence it was copied, but "finding" it in (some) other places.
+It is not surprising that a simple string-search should fail to catch "Οὐλομένην", with an upper-case omicron, from Edition 6; it is actually remarkable that Safari did find it. But both Firefox and `grep` return counter-intuitive results, failing to "find" a string in the place whence it was copied, but "finding" it in (some) other places.
 
 
 ## Enough Belaboring the Point
@@ -98,7 +98,7 @@ Obviously, this is a Unicode problem.
 - `0x3AD` GREEK SMALL LETTER EPSILON WITH TONOS
 - `0x3B5` GREEK SMALL LETTER EPSILON (with an acute, or tonos??, invisibly combined)
 
-And equally obviously, different engines for searching text handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that are found in serious scholarly editions, are  perfectly correct according to standards for typing Greek, and are indistinguishable to the human eye.
+And equally obviously, different engines for searching text handle these cases differently, with Safari happily recognizing them as the "same", while Firefox and `grep`… do something. It is entirely possible that the mysteries of the Mac OS X clipboard plays a role here, too. Whatever. We are getting apparently nondeterministic results when searching Greek texts that (a) are found in serious scholarly editions, (b) are perfectly correct according to standards for typing Greek, (c) and are indistinguishable to the human eye.
 
 ## Canonical Citation
 
