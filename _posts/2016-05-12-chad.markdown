@@ -1,0 +1,20 @@
+---
+layout: post
+title: The St. Chad Gospel
+---
+
+# [The St. Chad Gospels](http://vis.uky.edu/folio/resources/)
+
+**[Data and code](http://vis.uky.edu/folio/resources/) for exploring an 8th Century Bible.**
+
+In 2010 I had the privilege to travel to Lichfield England with Dr. Brent Seales of the University of Kentucky. Brent was then the director of the [U.K. Center for Visualization and Virtual Environments, the "Viz Center"](http://vis.uky.edu). Among his many areas of expertise is digital imagery of cultural heritage objects. He has done stellar work [Byzantine Manuscripts of the *Iliad*](https://vimeo.com/35650530), and on the [Herculaneum Papyri](http://www.newyorker.com/magazine/2015/11/16/the-invisible-library).
+
+Brent and I were co-PIs on an NSF grant for organizing images and their metadata to study artifacts along different conceptual "axes". You might want to see how the same artifact changed over time, for example, or to see many manuscript folios bearing the same text, or how the shape of a single Latin letter was written in 13th Century Italy vs. 13th Century Germany. Our work on this project resulted in many valuable insights and some very, very valuable new bodies of openly licensed data. This week, Brent is formally announcing a very significant body of work that emerged from that project.
+
+Lichfield Cathedral hold the *St. Chad Gospel*, an 8th Century Latin bible. It has been photographed from time to time over the years, but Brent's team from the University of Kentucky, with technical help from David Jacobs, who was then a conservator at the British Library, created the definitive image archive, taking multispectral images of the manuscript and capturing 3-dimensional mesh files of every folio.  
+
+These images and metadata are openly licensed and can be found at the [Internet Archive](https://archive.org/details/@viscenter). After six years of meticulous and thoughtful work, Brent's team has built a [remarkable body of tools around this manuscript](http://vis.uky.edu/folio/resources/), bringing together a century of images, allowing readers to explore each folio as it has changed over time, and how it appears under different wavelengths of light or combinations thereof.
+
+The code libraries behind this are also freely available on [GitHub](https://github.com/viscenter).
+
+None of this is my work, but I am extremely proud to have been a bystander from its inception. I think this sets a very high standard for "how to publish a manuscript", and I am looking forward to seeing the work of the Viz Center emulated and extended.
