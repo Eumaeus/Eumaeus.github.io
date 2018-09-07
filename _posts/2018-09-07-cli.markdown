@@ -9,15 +9,24 @@ This is an evolving list of basic commands for working on the Unix command-line 
 
 ## Navigating
 
-- Location `/`. The *root* of the filesystem.
-- Location `~`. Your *home* directory, *e.g.* `/Users/yourUserName`.
-- Location `../`. One level up from wherever you are in the filesystem hierarchy. (see below)
-- Command `pwd` "print working directory". Tells you where you are in the filesystem hierarchy.
-- Command `ls` "list". Tells you what files and directories are present at your current location in the filesystem hierarchy.
-- Command `cd …` "change directory …". Change directory. Takes an *argument*. `cd ~` changes to your *homer* directory. `cd ~/Desktop` changes to the Desktop directory inside your home directory.
-- Command `cd ../` "change directory up one level". For example, `cd ~/Desktop` will take you to `/Users/yourUserName/Desktop`. After that, `cd ../` will take you to `/Users/yourUserName`.
-- Command `cd -`. Takes to to the *previous location*, where you were befor the most recent `cd` command. Takes you "back".
+### Locations
+
+- `/`. The *root* of the filesystem.
+- `~`. Your *home* directory, *e.g.* `/Users/yourUserName`.
+- `../`. One level up from wherever you are in the filesystem hierarchy. (see below)
+
+### Locations
+
+- `pwd` "print working directory". Tells you where you are in the filesystem hierarchy.
+- `ls` "list". Tells you what files and directories are present at your current location in the filesystem hierarchy.
+- `cd …` "change directory …". Change directory. Takes an *argument*. `cd ~` changes to your *homer* directory. `cd ~/Desktop` changes to the Desktop directory inside your home directory.
+- `cd ../` "change directory up one level". For example, `cd ~/Desktop` will take you to `/Users/yourUserName/Desktop`. After that, `cd ../` will take you to `/Users/yourUserName`.
+- `cd -`. Takes to to the *previous location*, where you were befor the most recent `cd` command. Takes you "back".
+
+## Working with files and programs
+
 - Command `less [filename]`. Gives a quick look at the contents of a file; exit `less` by hitting the `q` key.
+- Command `which [name]`. Asks if a program names `[name]` exists and is known to the computer. Try it with `which git`, to confirm that you have Git installed.
 
 ## Get Out of Jail
 
