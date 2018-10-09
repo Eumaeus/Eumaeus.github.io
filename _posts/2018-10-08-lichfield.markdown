@@ -16,8 +16,8 @@ The links below are to listings of [CITE2 URNs]() identifying each of the digita
 - [St. Chad Gospel, historical imaging: 1912 (27 images)]()
 - [St. Chad Gospel, historical imaging: 1929 (271 images)]()
 - [St. Chad Gospel, historical imaging: 1962 (244 images)]()
-- [Wycliff New Testament, Composite RGB Images (279 images)](WycliffRGB.markdown)
-- [Wycliff New Testament, monochromatic multispectral images (2,963 images)](wycliffMulti.markdown)
+- [Wycliff New Testament, Composite RGB Images (279 images)](/WycliffRGB.markdown)
+- [Wycliff New Testament, monochromatic multispectral images (2,963 images)](/wycliffMulti.markdown)
 
 
 ## About the Digital Images
