@@ -1,0 +1,46 @@
+---
+layout: post
+title: The St. Chad Gospel, Lichfield Cathedral. Historical Images, 1912.
+---
+
+# The St. Chad Gospel, Lichfield Cathedral
+
+Historical imagery from 1912.
+
+**Collection URN:** `urn:cite2:fufolio:chad1912.2018:`
+
+This data is the result of research from the University of Kentucky under the leadership of Brent Seales during the summer of 2010, with the kind permission of the Chapter of Lichfield Cathedral and the generous cooperation of Canon Chancellor Pete Wilcox.
+
+The digital images are Copyright 2010 The Chapter of Lichfield Cathedral and are made available for use under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+This material is based upon work supported by the National Science Foundation under Grants No. IIS-0535003, 0916148, & 0916421. Any opinions, findings and conclusions or recomendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation (NSF).
+
+## List of Image URNs
+
+- Chad Imagery from 1912 DSC_4389: [`urn:cite2:fufolio:chad1912.2018:DSC_4389`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4389)
+- Chad Imagery from 1912 DSC_4390: [`urn:cite2:fufolio:chad1912.2018:DSC_4390`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4390)
+- Chad Imagery from 1912 DSC_4391: [`urn:cite2:fufolio:chad1912.2018:DSC_4391`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4391)
+- Chad Imagery from 1912 DSC_4392: [`urn:cite2:fufolio:chad1912.2018:DSC_4392`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4392)
+- Chad Imagery from 1912 DSC_4393: [`urn:cite2:fufolio:chad1912.2018:DSC_4393`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4393)
+- Chad Imagery from 1912 DSC_4394: [`urn:cite2:fufolio:chad1912.2018:DSC_4394`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4394)
+- Chad Imagery from 1912 DSC_4395: [`urn:cite2:fufolio:chad1912.2018:DSC_4395`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4395)
+- Chad Imagery from 1912 DSC_4396: [`urn:cite2:fufolio:chad1912.2018:DSC_4396`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4396)
+- Chad Imagery from 1912 DSC_4397: [`urn:cite2:fufolio:chad1912.2018:DSC_4397`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4397)
+- Chad Imagery from 1912 DSC_4398: [`urn:cite2:fufolio:chad1912.2018:DSC_4398`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4398)
+- Chad Imagery from 1912 DSC_4399: [`urn:cite2:fufolio:chad1912.2018:DSC_4399`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4399)
+- Chad Imagery from 1912 DSC_4400: [`urn:cite2:fufolio:chad1912.2018:DSC_4400`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4400)
+- Chad Imagery from 1912 DSC_4401: [`urn:cite2:fufolio:chad1912.2018:DSC_4401`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4401)
+- Chad Imagery from 1912 DSC_4402: [`urn:cite2:fufolio:chad1912.2018:DSC_4402`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4402)
+- Chad Imagery from 1912 DSC_4403: [`urn:cite2:fufolio:chad1912.2018:DSC_4403`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4403)
+- Chad Imagery from 1912 DSC_4404: [`urn:cite2:fufolio:chad1912.2018:DSC_4404`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4404)
+- Chad Imagery from 1912 DSC_4405: [`urn:cite2:fufolio:chad1912.2018:DSC_4405`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4405)
+- Chad Imagery from 1912 DSC_4406: [`urn:cite2:fufolio:chad1912.2018:DSC_4406`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4406)
+- Chad Imagery from 1912 DSC_4407: [`urn:cite2:fufolio:chad1912.2018:DSC_4407`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4407)
+- Chad Imagery from 1912 DSC_4408: [`urn:cite2:fufolio:chad1912.2018:DSC_4408`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4408)
+- Chad Imagery from 1912 DSC_4409: [`urn:cite2:fufolio:chad1912.2018:DSC_4409`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4409)
+- Chad Imagery from 1912 DSC_4410: [`urn:cite2:fufolio:chad1912.2018:DSC_4410`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4410)
+- Chad Imagery from 1912 DSC_4411: [`urn:cite2:fufolio:chad1912.2018:DSC_4411`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4411)
+- Chad Imagery from 1912 DSC_4412: [`urn:cite2:fufolio:chad1912.2018:DSC_4412`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4412)
+- Chad Imagery from 1912 DSC_4413: [`urn:cite2:fufolio:chad1912.2018:DSC_4413`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4413)
+- Chad Imagery from 1912 DSC_4414: [`urn:cite2:fufolio:chad1912.2018:DSC_4414`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4414)
+- Chad Imagery from 1912 DSC_4415: [`urn:cite2:fufolio:chad1912.2018:DSC_4415`](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:chad1912.2018:DSC_4415)
