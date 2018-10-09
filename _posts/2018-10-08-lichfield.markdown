@@ -11,13 +11,13 @@ For 2018, Furman University is releasing the [collection of images from Lichfiel
 
 The links below are to listings of [CITE2 URNs]() identifying each of the digital images in the collection; these URNs are wrapped in HTTP links that will allow viewing in the [CITE Image Citation Tool](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:wycliff_rgb.2018:W001r).
 
-- [St. Chad Gospel, Composite RGB Images (262 images)](chad1912.markdown)
-- [St. Chad Gospel, monochromatic multispectral images (3,561 images)]()
-- [St. Chad Gospel, historical imaging: 1912 (27 images)]()
-- [St. Chad Gospel, historical imaging: 1929 (271 images)]()
-- [St. Chad Gospel, historical imaging: 1962 (244 images)]()
-- [Wycliff New Testament, Composite RGB Images (279 images)](/WycliffRGB.markdown)
-- [Wycliff New Testament, monochromatic multispectral images (2,963 images)](/wycliffMulti.markdown)
+- [St. Chad Gospel, Composite RGB Images (262 images)](https://github.com/Eumaeus/Eumaeus.github.io/blob/master/_posts/Image_Inventories/ChadRGB.markdown)
+- [St. Chad Gospel, monochromatic multispectral images (3,561 images)](https://github.com/Eumaeus/Eumaeus.github.io/blob/master/_posts/Image_Inventories/ChadMulti.markdown)
+- [St. Chad Gospel, historical imaging: 1912 (27 images)](https://github.com/Eumaeus/Eumaeus.github.io/blob/master/_posts/Image_Inventories/chad1912.markdown)
+- [St. Chad Gospel, historical imaging: 1929 (271 images)](https://github.com/Eumaeus/Eumaeus.github.io/blob/master/_posts/Image_Inventories/chad1929.markdown)
+- [St. Chad Gospel, historical imaging: 1962 (244 images)](https://github.com/Eumaeus/Eumaeus.github.io/blob/master/_posts/Image_Inventories/chad1962.markdown)
+- [Wycliff New Testament, Composite RGB Images (279 images)](https://github.com/Eumaeus/Eumaeus.github.io/blob/master/_posts/Image_Inventories/WycliffRGB.markdown)
+- [Wycliff New Testament, monochromatic multispectral images (2,963 images)](https://github.com/Eumaeus/Eumaeus.github.io/blob/master/_posts/Image_Inventories/wycliffMulti.markdown)
 
 
 ## About the Digital Images
