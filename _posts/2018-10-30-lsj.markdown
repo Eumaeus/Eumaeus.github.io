@@ -75,7 +75,7 @@ For projects that would like to link directly to [specific entries](http://folio
 
 You can browse entries alphabetically via the sidebar on the left of the screen.
 
-You can type [beta code](https://en.wikipedia.org/wiki/Beta_Code) in the "Search Greek" field; the app will suggest words once you've typed two characters. The order of suggestions is as follows:
+You can type [beta code](https://en.wikipedia.org/wiki/Beta_Code) **without diacritical marks** in the "Search Greek" field; the app will suggest words once you've typed two characters. The order of suggestions is as follows:
 
 1. An entry's lemma is identical to what you typed.
 1. A lemma starts with what you typed.
