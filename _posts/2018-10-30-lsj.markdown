@@ -97,6 +97,6 @@ Report bugs in the app by [filing issues on its GitHub repository](https://githu
 -----
 
 
-[^editors]: Lisa Cerrato, William Merrill, Elli Mylonas, and David Smith are the names attached to [the origonal XML files]().
+[^editors]: Lisa Cerrato, William Merrill, Elli Mylonas, and David Smith are the names attached to [the origional XML files]().
 
 
