@@ -69,7 +69,30 @@ For projects that would like to link directly to [specific entries](http://folio
 
 > <http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n2389>
 
+### Some Notes on the Web App
 
+You can browse entries alphabetically via the sidebar on the left of the screen.
+
+You can type [beta code](https://en.wikipedia.org/wiki/Beta_Code) in the "Search Greek" field; the app will suggest words once you've typed two characters. The order of suggestions is as follows:
+
+1. An entry's lemma is identical to what you typed.
+1. A lemma starts with what you typed.
+1. A lemma includes what you typed.
+1. Some Greek word in an entry includes what you typed.
+
+This might help a little with the age-old problem in Greek: "You can't look it up unless you already know what it is."
+
+"Search All Text" will do a *tokenized* search of the contents of entries. So a search for "cat" will find entries that contain the word "cat", but will not find "catalogue" or "category".
+
+"Retrieve by URN" does what it says. If you enter a valid Cite2 URN identifying a passage of this version of the *LSJ*, it will retrieve it. Each entry's URN appears in the upper right corner of the entry. The "Retrieve by URN" field will accept range URNs, *e.g.* `urn:cite2:hmt:lsj.markdown:n109766-n109776`, since the *LSJ* is an *ordered* collection.
+
+If you click on an entry's URN, it should automatically be copied to your clipboard for pasting in somewhere else.
+
+To link to a particular entry from another web-page, attach `?urn=[some urn]` to the URL for the app:
+
+<http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n109766-n109776>
+
+Report bugs in the app by [filing issues on its GitHub repository](https://github.com/Eumaeus/cite-lsj-browser/issues). Report errors in the underlying data [by filing issues on its GitHub repository](https://github.com/Eumaeus/cite_lsj_cex/issues).
 
 -----
 
