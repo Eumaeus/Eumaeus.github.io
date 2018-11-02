@@ -1,0 +1,76 @@
+---
+layout: post
+title: Liddel-Scott Lexicon in the CITE Architecture
+---
+
+# Publishing the Liddel & Scott Lexicon *via* CITE
+
+## TL;DR
+
+- [A web-app for browsing the *LSJ*](http://folio2.furman.edu/lsj/)
+- based on [a transformation of the Perseus *LSJ* data, by Giuseppe Celano](https://github.com/gcelano/LSJ_GreekUnicode)
+- served from a [CITE microservice](https://github.com/cite-architecture/scs-akka)
+- with *LSJ* data in [Markdown](https://daringfireball.net/projects/markdown/syntax) format
+- serialized in [CEX](https://cite-architecture.github.io/citedx/CEX-spec-3.0.1/)
+- by which you can [browse the *LSJ* lecxont](http://folio2.furman.edu/lsj/index.html),
+- or [cite a specific entry from another resource](http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n42827).
+
+## The LSJ Lexicon
+
+A standard reference for any English speaker trying to read ancient Greek is the "*LSJ*,":
+
+> *A Greek-English Lexicon*, Henry George Liddell, Robert Scott, revised and augmented throughout by Sir Henry Stuart Jones with the assistance of Roderick McKenzie (Oxford: Clarendon Press. 1940)
+
+Thanks to [The Perseus Project](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.04.0057) and [The National Endowment for the Humanities](https://www.neh.gov), and *many editors*[^editors] we long ago got this massive dictionary of ancient Greek into a machine-readable format. Thanks to [Giuseppe Celano](https://github.com/gcelano/LSJ_GreekUnicode) we have [a version of those XML files with the (formerly) beta-code Greek transformed to Unicode](https://github.com/gcelano/LSJ_GreekUnicode).
+
+The *LSJ* consists of 116,502 entries, each a scholarly article on philology and linguistics. Its history is fascinating, and it is prerserved in the Preface to the 1940 edition, which you can read in the [Perseus XML edition of the *Alpha* volume](https://raw.githubusercontent.com/gcelano/LSJ_GreekUnicode/master/grc.lsj.perseus-eng1.xml).
+
+Thanks to Perseus' foresight in openly licensing the electronic text of *LSJ* there are a number of excellent website and mobile apps offering access to this data.
+
+## Yet Another LSJ Dataset!
+
+We, Christopher Blackwell and Neel Smith, have published another version of the *LSJ*, as a [CITE Collection](http://cite-architecture.github.io/cite2/), with the data for each *LSJ* entry formatted in [Markdown](https://daringfireball.net/projects/markdown/syntax).
+
+[The data is on GitHub.](https://github.com/Eumaeus/cite_lsj_cex)
+
+## Why CITE?
+
+The [CITE Architecture](https://cite-architecture.github.io) provides machine-actionable canonical citation for objects of study. A lexicon is, generically, an ordered collection of entries, and is thus easily citable.  
+
+History has shown that an important lexicon like the *LSJ* will exist in many versions. CITE lets us cite to objects in specific versions, or as notional objects, preserving *scholarly identity*. So an *LSJ* as a CITE collection is easily integrated into other scholarship.
+
+## Why Markdown?
+
+The [Markdown version of the *LSJ*](https://github.com/Eumaeus/cite_lsj_cex) is a transformation of the [TEI-XML version](https://github.com/gcelano/LSJ_GreekUnicode). The TEI-XML version has elaborate markup, documenting many features of this complex text. There are 59,586 uniquely tagged elements in the TEI *LSJ*, with 64 distinct elements.
+
+The Markdown version identifies only (1) a URN identifier, (2) a *lemma*, and (3) an entry, with English translations of Greek in **bold**, and a few other elements marked by *italics*.
+
+### Why reduce 64 elements to 5?
+
+*A Greek-English Lexicon* was written, printed, and published as a text for technically proficient human readers. The markup added subsequently was an attempt to transform this 19th Century text into a 21st Century database of Greek linguistics.
+
+It cannot be done. 
+
+The abbreviations, the assumptions, the structure of the 19th Century *LSJ* amount to **lossy compression** that cannot be expanded to useful data. By publishing a Markdown edition as as CITE collection, we think we are being as true to the original lexicon as we can.
+
+This is a *canonically citable* collection of data-objects that are *intended for human readers*.
+
+## The Data & Service
+
+This version of the *LSJ* is published as a [CEX file](https://github.com/Eumaeus/cite_lsj_cex), a serialization of a CITE Collection. 
+
+It is exposed through a [CITE Microservice](https://github.com/cite-architecture/scs-akka) that accepts request via `http` and returns reponses as `json`. For an example of a rich dataset served from CEX via a CITE microservice, see [the HMT microservice](http://beta.hpcc.uh.edu/hmt/hmt-microservice/), and [this discussion of it](https://homermultitext.blogspot.com/2018/10/access-to-hmt-facsimiles.html).
+
+## The Web-App
+
+To provide usefull access to this data, we offer [a web-application for accessing LSJ data](http://folio2.furman.edu/lsj/index.html). 
+
+For projects that would like to link directly to [specific entries](http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n2389), this application acceps **url-parameters**. 
+
+> <http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n2389>
+
+
+
+[^editors]: Lisa Cerrato, William Merrill, Elli Mylonas, and David Smith are the names attached to [the origonal XML files]().
+
+
