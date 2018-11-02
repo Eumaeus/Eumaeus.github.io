@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Liddel-Scott Lexicon in the CITE Architecture
+title: Liddell-Scott Lexicon in the CITE Architecture
 ---
 
 # Publishing the Liddell & Scott Lexicon *via* CITE
