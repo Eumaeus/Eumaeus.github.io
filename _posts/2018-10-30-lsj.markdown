@@ -3,7 +3,7 @@ layout: post
 title: Liddel-Scott Lexicon in the CITE Architecture
 ---
 
-# Publishing the Liddel & Scott Lexicon *via* CITE
+# Publishing the Liddell & Scott Lexicon *via* CITE
 
 ## TL;DR
 
