@@ -65,10 +65,13 @@ It is exposed through a [CITE Microservice](https://github.com/cite-architecture
 
 To provide usefull access to this data, we offer [a web-application for accessing LSJ data](http://folio2.furman.edu/lsj/index.html). 
 
-For projects that would like to link directly to [specific entries](http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n2389), this application acceps **url-parameters**. 
+For projects that would like to link directly to [specific entries](http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n2389), this application accepts **url-parameters**. 
 
 > <http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n2389>
 
+
+
+-----
 
 
 [^editors]: Lisa Cerrato, William Merrill, Elli Mylonas, and David Smith are the names attached to [the origonal XML files]().
