@@ -12,7 +12,7 @@ title: Liddel-Scott Lexicon in the CITE Architecture
 - served from a [CITE microservice](https://github.com/cite-architecture/scs-akka)
 - with *LSJ* data in [Markdown](https://daringfireball.net/projects/markdown/syntax) format
 - serialized in [CEX](https://cite-architecture.github.io/citedx/CEX-spec-3.0.1/)
-- by which you can [browse the *LSJ* lecxont](http://folio2.furman.edu/lsj/index.html),
+- by which you can [browse the *LSJ* lexicon](http://folio2.furman.edu/lsj/index.html),
 - or [cite a specific entry from another resource](http://folio2.furman.edu/lsj/index.html?urn=urn:cite2:hmt:lsj.markdown:n42827).
 
 ## The LSJ Lexicon
