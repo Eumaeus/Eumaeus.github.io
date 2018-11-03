@@ -23,3 +23,9 @@ Thanks to [The Perseus Project](http://www.perseus.tufts.edu/hopper/text?doc=Per
 
 For more on this project, see [the discussion of the parallel publication of the *LSJ*.](https://eumaeus.github.io/2018/10/30/lsj.html)
 
+## Data and Code
+
+- [Code for the browsing app is on GitHub](https://github.com/Eumaeus/lewis-and-short-browser)
+- [The dictionary in CEX form is on GitHub](https://github.com/Eumaeus/cex_lewis_and_short)
+- [A CEX file containing both the Lewis & Short and the LSJ is on GitHub](https://github.com/Eumaeus/fuCiteDX/tree/master/Lexica)
+
