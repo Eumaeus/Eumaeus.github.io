@@ -1,0 +1,25 @@
+---
+layout: post
+title: Lewis & Short Latin Dictionary in the CITE Architecture
+---
+
+# Publishing the Lewis & Short Latin Dictionary *via* CITE
+
+## TL;DR
+
+- [A web-app for browsing the *Lewis & Short*](http://folio2.furman.edu/lewis-short/)
+- based on [a transformation of the Perseus data](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.04.0059)
+- served from a [CITE microservice](https://github.com/cite-architecture/scs-akka)
+- with *LSJ* data in [Markdown](https://daringfireball.net/projects/markdown/syntax) format
+- serialized in [CEX](https://cite-architecture.github.io/citedx/CEX-spec-3.0.1/)
+- by which you can [browse the dictionary](http://folio2.furman.edu/lewis-short/index.html),
+- or [create a link to a a specific entry](http://folio2.furman.edu/lewis-short/index.html?urn=urn:cite2:hmt:ls.markdown:n21247).
+
+## The Lewis & Short Dictionary
+
+> *A Latin Dictionary.* Founded on Andrews’ edition of Freund's Latin dictionary, revised, enlarged, and in great part rewritten by Charlton T. Lewis, Ph.D., and Charles Short, LL.D. (Oxford: Clarendon Press, 1879)
+
+Thanks to [The Perseus Project](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.04.0059) and [The National Endowment for the Humanities](https://www.neh.gov), we have this 19th Century Latin dictionary in a machine-readable format.
+
+For more on this project, see [the discussion of the parallel publication of the *LSJ*.](https://eumaeus.github.io/2018/10/30/lsj.html)
+
