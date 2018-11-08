@@ -41,7 +41,7 @@ History has shown that an important lexicon like the *LSJ* will exist in many ve
 
 ## Why Markdown?
 
-The [Markdown version of the *LSJ*](https://github.com/Eumaeus/cite_lsj_cex) is a transformation of the [TEI-XML version](https://github.com/gcelano/LSJ_GreekUnicode). The TEI-XML version has elaborate markup, documenting many features of this complex text. There are 59,586 uniquely tagged elements in the TEI-XML version of the *LSJ*, with 64 distinct elements.
+The [Markdown version of the *LSJ*](https://github.com/Eumaeus/cite_lsj_cex) is a transformation of the [TEI-XML version](https://github.com/gcelano/LSJ_GreekUnicode). The TEI-XML version has elaborate markup, documenting many features of this complex text. There are 59,586 tagged elements in the TEI-XML version of the *LSJ*, with 64 distinct tags.
 
 The Markdown version identifies only (1) a URN identifier, (2) a *lemma*, and (3) an entry, with English translations of Greek in **bold**, and a few other elements marked by *italics*.
 
