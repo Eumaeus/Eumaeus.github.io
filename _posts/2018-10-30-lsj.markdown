@@ -23,7 +23,7 @@ A standard reference for any English speaker trying to read ancient Greek is the
 
 Thanks to [The Perseus Project](http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a1999.04.0057), [The National Endowment for the Humanities](https://www.neh.gov), and *many editors*[^editors] we long ago got this massive dictionary of ancient Greek into a machine-readable format. Thanks to [Giuseppe Celano](https://github.com/gcelano/LSJ_GreekUnicode) we have [a version of those XML files with the (formerly) beta-code Greek transformed to Unicode](https://github.com/gcelano/LSJ_GreekUnicode).
 
-The *LSJ* consists of 116,502 entries, each a scholarly article on philology and linguistics. Its history is fascinating, and it is prerserved in the Preface to the 1940 edition, which you can read in the [Perseus XML edition of the *Alpha* volume](https://raw.githubusercontent.com/gcelano/LSJ_GreekUnicode/master/grc.lsj.perseus-eng1.xml).
+The *LSJ* consists of 116,502 entries, each a scholarly article on philology and linguistics. Its history is fascinating, and it is preserved in the Preface to the 1940 edition, which you can read in the [Perseus XML edition of the *Alpha* volume](https://raw.githubusercontent.com/gcelano/LSJ_GreekUnicode/master/grc.lsj.perseus-eng1.xml).
 
 Thanks to Perseus' foresight in openly licensing the electronic text of *LSJ* there are a number of excellent website and mobile apps offering access to this data.
 
