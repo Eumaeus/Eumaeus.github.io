@@ -19,7 +19,7 @@ This is an evolving list of basic commands for working on the Unix command-line 
 
 - `pwd` "print working directory". Tells you where you are in the filesystem hierarchy.
 - `ls` "list". Tells you what files and directories are present at your current location in the filesystem hierarchy.
-- `cd …` "change directory …". Change directory. Takes an *argument*. `cd ~` changes to your *homer* directory. `cd ~/Desktop` changes to the Desktop directory inside your home directory.
+- `cd …` "change directory …". Change directory. Takes an *argument*. `cd ~` changes to your *home* directory. `cd ~/Desktop` changes to the Desktop directory inside your home directory.
 - `cd ../` "change directory up one level". For example, `cd ~/Desktop` will take you to `/Users/yourUserName/Desktop`. After that, `cd ../` will take you to `/Users/yourUserName`.
 - `cd -`. Takes to to the *previous location*, where you were befor the most recent `cd` command. Takes you "back".
 
