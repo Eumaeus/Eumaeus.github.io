@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Testing the LSJs
+title: Testing Lexica
 ---
 
-# A Newer LSJ
+# How Many Entries in Liddell-Scott?
 
 Earlier, [I announced a new online version of the Liddell, Scott, Jones Greek Lexicon](https://eumaeus.github.io/2018/10/30/lsj.html), based on [a transformation of the Perseus *LSJ* data, by Giuseppe Celano](https://github.com/gcelano/LSJ_GreekUnicode). Subsequently, I announced a [new version of the lexicon data based on further work at the University of Chicago](https://eumaeus.github.io/2018/11/05/chicago.html).
 
