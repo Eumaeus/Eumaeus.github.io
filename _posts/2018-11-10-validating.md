@@ -59,7 +59,7 @@ On the first pass, the Perseus data had no duplicate URNs; the Chicago data had 
 
 ## Duplicate Lemmata?
 
-To see if there were duplicated *lemmata* in the lexcia, I mapped our data-vector, grouping by lemma this time, filtering out those with only one member:
+To see if there were duplicated *lemmata* in the lexica, I mapped our data-vector, grouping by lemma this time, filtering out those with only one member:
 
 ~~~ scala
 val perseusLemmas:Map[String,Vector[(Cite2Urn,String)]] = {
