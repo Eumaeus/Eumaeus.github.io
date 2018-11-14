@@ -15,7 +15,7 @@ Now, the 19th century *LSJ* is neither a machine-actionable database of Greek le
 
 But it would be nice to know what is in that list, so I have undertaken to do a little more work to understand why the original Perseus *LSJ* and the Chicago version contain a different number of entries. The result is a [new version of the Chicago data](https://github.com/Eumaeus/cite_lsj_cex) with a number of errors corrected. The final tally is **116,854** entries.
 
-Below is a sketchy description of how I went about testing the *LSJ* data. I do not include full sourcecode here, since doing so would require explaining where a bunch of files are in a local filesystem. If anyine cares, I will happily send a DropBox link to the complete setup (this was enough of a one-off that I did not do a full GitHub repository).
+Below is a sketchy description of how I went about testing the *LSJ* data. I do not include full sourcecode here, since doing so would require explaining where a bunch of files are in a local filesystem. If anyone cares, I will happily send a DropBox link to the complete setup (this was enough of a one-off that I did not do a full GitHub repository).
 
 All tests were run using [SBT](https://www.scala-sbt.org) and [Scala](https://www.scala-lang.org), with various [CITE Libraries](https://github.com/cite-architecture).
 
