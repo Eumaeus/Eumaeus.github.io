@@ -28,7 +28,7 @@ Are there duplicate ID values in either the Perseus or Chicago versions? I read 
 val persStr = Source.fromFile("perseus_lsj.cex").getLines.toVector
 ~~~
 
-Map those lines a Vector of `Tuples(Cite2Urn,String)`, where the `String` is the lemma:
+I mapped those lines to a Vector of `Tuples(Cite2Urn,String)`, where the `String` is the lemma:
 
 ~~~ scala
 val perseusData:Vector[(Cite2Urn,String)] = persStr.map( l => {
@@ -38,7 +38,7 @@ val perseusData:Vector[(Cite2Urn,String)] = persStr.map( l => {
 })
 ~~~
 
-Group items according to their URN values, and filter out any groups with only one member; what is left are our set of entries with duplicate URNs:
+I grouped those items according to their URN values, and filtered out any groups with only one member; what was left were a set of entries with duplicate URNs:
 
 ~~~ scala
 val perseusDuplicates:Map[Cite2Urn,Vector[(Cite2Urn,String)]] = {
