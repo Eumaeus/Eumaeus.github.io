@@ -61,7 +61,7 @@ This version of the *LSJ* is published as a [CEX file](https://github.com/Eumaeu
 
 [^cite]: This is the first public-facing publication that takes advantage of *discoverable text-property-type extensions*. A property in a CITE collection is typed as `number`, `string`, `Cite2Urn`, `CtsUrn`, or `boolean`, basic, primitive types. Because individual properties in versioned Collections are citable by URN, CEX lets us document specific properties of type `string` more broadly, for example, as XML, as GeoJson, or in this case as Markdown. An application can ignore this, and render `string` properties as plain text, or it can discover that a property is Markdown and do something with it. This application uses the [Marked.js](https://marked.js.org/#/README.md#README.md) library to format *LSJ* entries.
 
-It is exposed through a [CITE Microservice](https://github.com/cite-architecture/scs-akka) that accepts request via `http` and returns reponses as `json`. For an example of a rich dataset served from CEX via a CITE microservice, see [the HMT microservice](http://beta.hpcc.uh.edu/hmt/hmt-microservice/), and [this discussion of it](https://homermultitext.blogspot.com/2018/10/access-to-hmt-facsimiles.html).
+It is exposed through a [CITE Microservice](https://github.com/cite-architecture/scs-akka) that accepts requests via `http` and returns reponses as `json`. For an example of a rich dataset served from CEX via a CITE microservice, see [the HMT microservice](http://beta.hpcc.uh.edu/hmt/hmt-microservice/), and [this discussion of it](https://homermultitext.blogspot.com/2018/10/access-to-hmt-facsimiles.html).
 
 ## The Web-App
 
