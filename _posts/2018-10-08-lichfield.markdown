@@ -5,7 +5,7 @@ title: Lichfield Manuscript Images
 
 # Lichfield Cathedral Manuscript Image Collections: v.2018  
 
-For 2018, Furman University is releasing the [collection of images from Lichfield Cathedral](2016-05-12-chad.markdown) as a Cite2 Collection accessible through the [CITE Image Citation Tool](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:wycliff_rgb.2018:W001r).
+For 2018, Furman University is releasing the collection of images from Lichfield Cathedral as a Cite2 Collection accessible through the [CITE Image Citation Tool](http://www.homermultitext.org/ict2/?urn=urn:cite2:fufolio:wycliff_rgb.2018:W001r).
 
 ## The Digital Images
 
