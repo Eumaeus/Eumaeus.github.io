@@ -1,0 +1,139 @@
+---
+layout: post
+title: Oedipus
+---
+
+# A Richly Annotated Text of *Oedipus Tyrannos*
+
+## Background
+
+### Pedagogy
+
+I am reading Sophocles’ *Oedipus Tyrannos* with a Greek class at Furman University this Spring (2020). I wanted a good reader’s edition of the text, online, offering as much help as possible, ready to hand. 
+
+Since I do not believe that “laborious” is a synonym for “rigorous” in pedagogy, I want to provide frictionless access to the kinds of information that students in their first couple of years of Greek need to know. Things like “What does this word, which I have never seen before, mean?”, and “What does this word mean, this word that I memorized for a quiz 8 months ago but, through our shared human frailty, have forgotten, perhaps because it is 3:00 am?”, and “Which of the 750+ possible forms of δίδωμι might this one be?”
+
+Also, thanks to the incredible labors of scholars like [Francesco Mambrini, Giuseppe Celano](https://github.com/PerseusDL/treebank_data), [Vanessa Gorman](https://zenodo.org/record/3596076), and others, we have a rich body of syntactic annotations for most of the commonly read, and many of the less-commonly-read, texts in Greek.
+
+I like efforts at comprehensive commentary. The effort seems to me to be egalitarian and inclusive. Many “school editions” seem intentionally to fail to explain “simple” (in the eyes of the author) matters, skipping over things that a student “should know”. But which student? And on which day? Syntactic dependency treebanks do not merely deal with the hard or “interesting” parts, but with everything. So I wanted to roll this into my text for my students.
+
+### Checking out of the Hotel California
+
+It has long been my desire to build a framework for integrating all the excellent syntactic annotations that have emerged from the [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/) and its offshoots, with editions of texts that are subject to canonical citation, browsing, and other analyses.
+
+The nature of syntactic treebanks, at least as implemented, has made this a little difficult. Treebanks are XML files—you can find and explore a bunch of them at the links provided above—that organize a text according to (a) sentence, and (b) token. The **tokens** may be words in the text, or punctuation, or words *not* in the text (the universal phenomenon of “ellipsis”).
+
+The first generation of Classical treebanks produced texts divided into sentences, with tokens identified using ID-number unique within the sentence. 
+
+But we don’t cite the *Iliad* by `sentence + token`, we cite it by `book + poetic line`. In the first generation of treebanks, once you were in the middle of a text, it was very hard to align the syntactic annotations to any other edition of the poem. It was hard to know where you were in the text.
+
+The standard tools for generating treebanks did not help. The [Arethusa tool](https://www.perseids.org/tools/arethusa/app/#/), a standard user interface for generating treebanks (which I have used and profited from greatly, for the record) did a few things that made it harder for syntax to become an integrated kind of scholarly annotation. While it made gestures toward including canonical citation—by allowing [CTS-URNs](http://cite-architecture.org/ctsurn/) as a means for ingesting text, those URNs were not usefully included in the generated XML output.
+
+There was also the tokenization problem, which I will address below.
+
+Subsequent work on the growing body of treebanks, with Giuseppe Celano being the Promethean figure here, has done a lot to include useful canonical citation in treebank XML.
+
+### Tokenization
+
+In the 1990 issue of the *Journal of Computing in Higher Education*, in an article entitled “What is a Text, Really?”, Stephen Rose, David Durand, Elli Mylonas, and Allen Renear proposed this model: A text is an *ordered hierarchy of content objects*. “Ordered”, because you read from the beginning to the end; “hierarchy” because you might organize by book+line, or chapter+section; “content” because you have to have some content to read, or it isn’t a text.
+
+The authors of this article did not realize that they were sowing dragon’s teeth, but, Lo!, tenured professors sprang from the very earth and began a mighty battle over what constitutes “content”. Is markup content? Is punctuation (absent from some, but not all, ancient manuscripts) content? Is a passage of Greek in Beta-Code the *same* content, or *different* content from that passage in Unicode? How about combining Unicode *versus* precombined Unicode?
+
+Or, for syntax… take a Greek word like “μήδε”. Lexically, it is one thing, “μήδε”. Syntactically, it is two things, with the “μή-” part being an adverb, and the “-δε” part being a conjunction. [Arethusa](https://www.perseids.org/tools/arethusa/app/#/) will helpfully *tokenize* words like that into two tokens, so they can be fitted into a treebank. But we have not escaped the question of “What is *content*?”
+
+### OHCO2
+
+The Rose, *et al.* article proposed a model they called **OHCO**, and “ordered hierarchy of content objects.” For our work on the [Homer Mulititext](http://www.homermultitext.org), this was an awkward fit, and for about a decade we did not understand why. In 2009, however, Neel Smith (my co-Project Architect on the HMT) and his student, Gabe Weaver (now a big-shot Computer Scientist) published *Dartmouth Computer Science Technical Report TR2009-649*, “Applying Domain Knowledge from Structured Citation Formats to Text and Data Mining: Examples Using the CITE Architecture”, in which they proposed a modification to OHCO, which they called OHCO2.
+
+OHCO2 was “an ordered hierarchy of **citation** objects.”
+
+The `tl;dr` version of the article is this: 
+
+- The way scholars *name what they are talking about* is **citation**.
+- So if we have *machine-actionable, canonical citation*, we do not need to worry about the complexities of “content”.
+- If we assert that two things have the same *citation*, then they are the *same thing*, by virtue of *scholarly identity*.
+
+So, “mh=nin a)/eide qea/…” and “μῆνιν ἄειδε Θεά…” are the *same thing* if we, the Editors, say that they are both *Iliad* Book 1, Line 1. [test]
+
+I am too old and tired to recapitulate the entirely of the [CITE Architecture](http://cite-architecture.org) here, and the details of CTS-URNs and the OHCO2 Model, but a simple example can bear on the problem of syntax…
+
+**εἴτε** is the fifth word in [Sophocles, *OT* 1049](http://folio2.furman.edu/ot/cite-1.14.0.html?urn=urn:cts:greekLit:tlg0011.tlg004.fu:1049).
+
+The *traditional* scheme of citation for the *OT* is by poetic line. In the [CITE Architectre](http://cite-architecture.org) we can identify that line with a CTS-URN: [urn:cts:greekLit:tlg0011.tlg004.fu:1049](http://folio2.furman.edu/ot/cite-1.14.0.html?urn=urn:cts:greekLit:tlg0011.tlg004.fu:1049). With that URN, we can *identify* and *retrieve* a passage of text, which is the *only* thing a CTS-URN is good for. 
+
+But we want to work at a finer level of detail than that. The answer, in the [CITE Architectre](http://cite-architecture.org) is to create an *analytical exemplar*, an identified derivitive from an Edition, that tokenizes the text according to some analytical principle.[^analysis]
+
+[^analysis]: As Neel Smith says, “There are no generic analysis.” As I say, echoing Euclid, “Analyses are like prime numbers: the set of desired analyses (=tokenizations) is greater than any given set of analyses.”
+
+So we analyze and tokenize our canonically citable text for the purpose of analyzing syntaxt: and we can give a **name** to this specific token [urn:cts:greekLit:tlg0011.tlg004.fu.tokens:1049.5](http://folio2.furman.edu/ot/cite-1.14.0.html?urn=urn:cts:greekLit:tlg0011.tlg004.fu.tokens:1049.5).
+
+Now, “εἴτε” is both an “if” and an “and”. With CITE, we can have it both ways…
+
+We can use `urn:cts:greekLit:tlg0011.tlg004.fu.tokens:1049.5` twice in our syntactic analysis (all the while knowing that we are using the *same thing* twice), or we could further tokenize it, to:
+
+- urn:cts:greekLit:tlg0011.tlg004.fu.tokens:1049.5.1 = εἰ 
+- urn:cts:greekLit:tlg0011.tlg004.fu.tokens:1049.5.2 = τε 
+
+And treat them separately. If we were to choose the example above, we could ask for
+:
+
+`- urn:cts:greekLit:tlg0011.tlg004.fu.tokens:1049.5`
+
+And get `εἰ τε`.
+
+But either way, we retain the ability, computationally, to align our analysis-specific tokenizations back to an original text.
+
+### Text & Speakers
+
+Below is a little bit of Sophocles, as a reader might like to see it.
+
+>| 			**Ἄγγελος**
+>| 1046	ὑμεῖς γʼ ἄριστʼ εἰδεῖτʼ ἂν οὑπιχώριοι.
+>| 			**Οἰδίπους**
+>| 1047	ἔστιν τις ὑμῶν τῶν παρεστώτων πέλας,
+>| 1048	ὅστις κάτοιδε τὸν βοτῆρʼ ὃν ἐννέπει,
+>| 1049	εἴτʼ οὖν ἐπʼ ἀγρῶν εἴτε κἀνθάδʼ εἰσιδών;
+>| 1050	σημήναθʼ, ὡς ὁ καιρὸς ηὑρῆσθαι τάδε.
+>| 			**Χορός**
+>| 1051	οἶμαι μὲν οὐδένʼ ἄλλον ἢ τὸν ἐξ ἀγρῶν,
+>| 1052	ὃν κἀμάτευες πρόσθεν εἰσιδεῖν: ἀτὰρ…
+
+Are the speaker-attributions—Ἄγγελος, Οἰδίπους, Χορός—*content* or not? 
+
+Clearly, a human reader wants to know who is saying what. 
+
+But on the other hand, if I am going to do any kind of computational analysis on the language of Sophocles, I might not want to include the word “Χορός” in a word-count.
+
+And, on yet another hand, if I am analyzing the text—and let’s remember that “analysis” is, literally, “dividing up”—I might pluck the word “εἰσιδών” out of its place in the ordered hierarchy, to talk about it, count it, or whatever. In so doing, it would be useful to know *who said that one word*.
+
+### TEI-XML, or, “You’ve made a good start…”
+
+My grandmother was the daughter of Scandinavians who were tricked by American railroad companies into moving to Montana and the Dakotas; these folks were promised an agrarian paradise of fertile, loamy soil, and found instead a desert hellscape where the “soil” was half an inch of decomposed beetles, accumulated over 20,000 years, which all blew away the instant you stuck a plow into it. Grandma Willard also lived through the Great Depression, and survived as the wife of an Army doctor during and after World War II. So she had a Heraclean work-ethic that was alien and dismaying to children of the late 20th Century. Often, when she set me some chore, and I presented myself to her, hours later, to receive praise for a job well done, she would say, “Well… you’ve made a good start…”.
+
+This is how I feel about TEI-XML. I have spent 20 years processing XML. I am the Boss of TEI-XSLT. I got tenure for a project based on [Apache Cocoon](https://cocoon.apache.org). I have generated XML programmatically; I have written Java code that extracts fragments of XML while retaining their well-formed structures; I have spent thousands of hours turning `<milestone/>` elements into containing-elements.
+
+TEI-XML is not a standard. Here is how I know this:
+
+If TEI-XML were a standard, I should be able to write one XSLT transformation that works with more than one TEI-XML text, to get a predictable output. **This has never happened for me, in twenty years.** Every TEI-XML document is an idiosyncratic one-off. TEI is the un-ironic embodiment of [Jorge Luis Borges’ *On Excactitude in Science*](https://kwarc.info/teaching/TDM/Borges.pdf).
+
+In [the *Homer Multitext*](http://www.homermultitext.org), we use TEI-XML, and specifically a tiny subset of [Epidoc](https://sourceforge.net/p/epidoc/wiki/Home/), as our archival dataset for textual editions. We **do not** pollute our textual editions with information about images, codicology, or anything else: what is the text; what is its editorial status; which “Ajax” is this one; which “Thebes” is this one.
+
+But any TEI-XML document is merely “a good start”. It is *great* that I can mark up alternate readings on a manuscript, or scribal corrections, or non-stardard forms with their normalized forms. But that is merely *a good start*.
+
+If I am to claim to have “edited” a text, I am claiming to present *some version* of that text. If I stop at the TEI-XML stage, I have not edited *a text*, but have instead created a “Choose Your Own Adventure” book, where the reader (human or machine) has to do all of the work—for each and every reading—of making decisions.
+
+
+
+
+
+## Text & Lexicon
+
+
+
+## Misc. Notes
+
+### Short Definitions from *LSJ*
+
+### Erroneous *LSJ* References
+
+
