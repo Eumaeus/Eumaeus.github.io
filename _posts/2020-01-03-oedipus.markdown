@@ -5,6 +5,8 @@ title: Oedipus
 
 # A Richly Annotated Text of *Oedipus Tyrannos*
 
+[A Work in Progress… to be continued…]
+
 ## Background
 
 ### Pedagogy
@@ -120,9 +122,9 @@ In [the *Homer Multitext*](http://www.homermultitext.org), we use TEI-XML, and s
 
 But any TEI-XML document is merely “a good start”. It is *great* that I can mark up alternate readings on a manuscript, or scribal corrections, or non-stardard forms with their normalized forms. But that is merely *a good start*.
 
-If I am to claim to have “edited” a text, I am claiming to present *some version* of that text. If I stop at the TEI-XML stage, I have not edited *a text*, but have instead created a “Choose Your Own Adventure” book, where the reader (human or machine) has to do all of the work—for each and every reading—of making decisions.
+If I am to claim to have “edited” a text, I am claiming to present *some version* of that text. If I stop at the TEI-XML stage, I have not edited *a text*, but have instead created a “Choose Your Own Adventure” book, where the reader (human or machine) has to do all of the work—for each and every reading—of making decisions.
 
-
+[A work in progress… to be continued…]
 
 
 
